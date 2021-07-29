@@ -104,11 +104,11 @@ export const getServerSideProps = async (ctx) => {
 			},
 		};
 	}
-	const { name, email, image } = session.user;
+	const { name } = session.user;
 	const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&contentDetails%2Cstatistics&maxResults=5&q=csgo&key=${process.env.NEXT_PUBLIC_YOUTUBE_API}`;
 	const data = await fetch(url);
 	const jsonData = await data.json();
 	return {
-		props: { data: jsonData, name: name, email: email, image: image },
+		props: { data: jsonData, name: name },
 	};
 };
