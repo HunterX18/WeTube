@@ -12,7 +12,7 @@ const VideoDetails = ({ video }) => {
 					}}
 				>
 					<div className="card border-0 p-0" style={{ width: "15rem" }}>
-						<img src={image} className="img-fluid rounded-start" />
+						<img src={image} className="img-fluid rounded-start" alt="thumbnail"/>
 					</div>
 					<div
 						className="card border-0"

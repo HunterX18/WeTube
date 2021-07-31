@@ -4,6 +4,7 @@ const Video = ({video, videoSrc}) => {
 		<div className="card border-0 mr-3" style={{ maxWidth: "60vw" }}>
 			<iframe
 				frameBorder="0"
+				title="selected video"
 				src={videoSrc}
 				style={{ overflow: "hidden", height: "70vh", width: "100%" }}
 				height="100%"

@@ -2,8 +2,8 @@ import { getSession, signOut } from "next-auth/client";
 import { useEffect, useState } from "react";
 import VideoDetails from "../components/videoDetails";
 import Video from "../components/video";
-import youtube from "../public/youtube3.png";
-import signout from "../public/signout.png";
+import youtube from "../public/icons/youtube3.png";
+import signout from "../public/icons/signout.png";
 import Image from "next/image";
 
 export default function Home({ data, name }) {
@@ -41,7 +41,7 @@ export default function Home({ data, name }) {
 				style={{ background: "#202020" }}
 			>
 				<div className="d-flex">
-					<Image src={youtube} width="50rem" height="10rem" />
+					<Image src={youtube} width="50rem" height="10rem" alt="youtube" />
 					<h4 className="m-0" style={{ color: "#ffffff" }}>
 						YouTube
 					</h4>
@@ -72,7 +72,7 @@ export default function Home({ data, name }) {
 						signOut({ callbackUrl: "http://localhost:3000/Signin" });
 					}}
 				>
-					<Image src={signout} width="30rem" height="30rem" />
+					<Image src={signout} width="30rem" height="30rem" alt="sign out" />
 				</button>
 			</div>
 			<div className="container-l px-5 py-3" style={{ background: "#181818" }}>

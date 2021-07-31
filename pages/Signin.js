@@ -1,6 +1,6 @@
 import { signIn } from "next-auth/client";
 import Image from "next/image"
-import Google from '../public/google.png'
+import Google from '../public/icons/google.png'
 
 const Signin = () => {
 	return (
