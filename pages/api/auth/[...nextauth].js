@@ -6,7 +6,7 @@ export default NextAuth({
 		Providers.Google({
 			clientId: process.env.GOOGLE_ID,
 			clientSecret: process.env.GOOGLE_SECRET,
-			callbackURL: "http://localhost:3000/api/auth/callback/google",
+			callbackURL: `${process.env.NEXTAUTH_URL}/api/auth/callback/google`,
 		}),
 	],
 	session: {
